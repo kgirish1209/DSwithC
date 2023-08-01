@@ -32,4 +32,10 @@ void appendNode_ll_list(ll_int* head_node,ll_int* node);
 
 unsigned int getNumNodes_ll_int(ll_int* head_node);
 
+void reverseList_ll_int(ll_int** head_node);
+
+ll_int* getLastNode_ll_int(ll_int* head_node);
+void appendList_ll_int(ll_int* head_node,ll_int* list);
+void mergeList_ll_int(ll_int* list1,ll_int* list2, unsigned int m);
+
 #endif
