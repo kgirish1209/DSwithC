@@ -3,8 +3,19 @@ CFLAGS=-I
 DEPS=comdef.h linkedList.h linkedListInt.h stackInt.h
 TARGET_LL=test_ll
 TARGET_STACK=test_stack
-TARGET=$(TARGET_LL) $(TARGET_STACK)
+TARGET_BUILD_ALL=all
+TARGET_CLEAN_BUILD_ALL=cleanbuildall
 
+$(TARGET_BUILD_ALL):
+	@echo ==========Building All targets============
+	make -f makefile test_stack
+	make -f makefile test_ll
+	@echo ==========All targets built successful============
+
+$(TARGET_CLEAN_BUILD_ALL):
+	@echo ========Cleaning all targets=======
+	make -f makefile clean
+	make -f makefile $(TARGET_BUILD_ALL)
 
 stackInt.o: stackInt.c $(DEPS)
 	@echo Compiling $< 
@@ -34,4 +45,4 @@ $(TARGET_STACK): stackInt.o test_stackInt.o
 
 clean:
 	@echo Cleaning targets
-	rm ./*.o ./$(TARGET)
+	rm ./*.o ./$(TARGET_LL) ./$(TARGET_STACK)
