@@ -1,0 +1,78 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC=gcc$/;"	m
+CFLAGS	makefile	/^CFLAGS=-I$/;"	m
+COMDEF	comdef.h	2;"	d
+DEPS	makefile	/^DEPS=comdef.h linkedList.h linkedListInt.h stackInt.h$/;"	m
+FALSE	comdef.h	5;"	d
+LINKEDLISTHEADER	linkedList.h	2;"	d
+LINKEDLISTINTHEADER	linkedListInt.h	2;"	d
+LL_CREATE_DATA_FUN1	linkedList.h	15;"	d
+LL_CREATE_DATA_FUN2	linkedList.h	16;"	d
+LL_CREATE_DATA_FUN3	linkedList.h	17;"	d
+LL_CREATE_FAIL_ALL_NODE	linkedList.h	/^	LL_CREATE_FAIL_ALL_NODE,$/;"	e	enum:__anon1
+LL_CREATE_FAIL_HEAD_NODE	linkedList.h	/^	LL_CREATE_FAIL_HEAD_NODE,$/;"	e	enum:__anon1
+LL_CREATE_FAIL_NUM_NODE	linkedList.h	/^	LL_CREATE_FAIL_NUM_NODE,$/;"	e	enum:__anon1
+LL_CREATE_MAX	linkedList.h	/^	LL_CREATE_MAX$/;"	e	enum:__anon1
+LL_CREATE_PASS	linkedList.h	/^	LL_CREATE_PASS,$/;"	e	enum:__anon1
+LL_DATA_AUTO_FUN	linkedListInt.c	7;"	d	file:
+STACK_DEFAULT_SIZE	stackInt.h	37;"	d
+STK_OP_CREATE_FAILED	stackInt.h	/^	STK_OP_CREATE_FAILED,$/;"	e	enum:__anon2
+STK_OP_CREATE_PASS	stackInt.h	/^	STK_OP_CREATE_PASS,$/;"	e	enum:__anon2
+STK_OP_MAX	stackInt.h	/^	STK_OP_MAX$/;"	e	enum:__anon2
+STK_OP_OVERFLOW	stackInt.h	/^	STK_OP_OVERFLOW,$/;"	e	enum:__anon2
+STK_OP_POP_FAILED	stackInt.h	/^	STK_OP_POP_FAILED,$/;"	e	enum:__anon2
+STK_OP_PUSH_FAILED	stackInt.h	/^	STK_OP_PUSH_FAILED,$/;"	e	enum:__anon2
+STK_OP_SEEK_FAILED	stackInt.h	/^	STK_OP_SEEK_FAILED,$/;"	e	enum:__anon2
+STK_OP_SUCCESS	stackInt.h	/^	STK_OP_SUCCESS,$/;"	e	enum:__anon2
+STK_OP_UNDERFLOW	stackInt.h	/^	STK_OP_UNDERFLOW,$/;"	e	enum:__anon2
+TARGET	makefile	/^TARGET=$(TARGET_LL) $(TARGET_STACK)$/;"	m
+TARGET_LL	makefile	/^TARGET_LL=test_ll$/;"	m
+TARGET_STACK	makefile	/^TARGET_STACK=test_stack$/;"	m
+TRUE	comdef.h	4;"	d
+__linkedListInt	linkedListInt.h	/^struct __linkedListInt$/;"	s
+__stackInt	stackInt.h	/^struct __stackInt $/;"	s
+__stackMetaInfo	stackInt.h	/^struct __stackMetaInfo$/;"	s
+appendList_ll_int	linkedListInt.c	/^void appendList_ll_int(ll_int* head_node,ll_int* list)$/;"	f
+appendNode_ll_list	linkedListInt.c	/^void appendNode_ll_list(ll_int* head_node,ll_int* node)$/;"	f
+createStackInt	stackInt.c	/^stackOpStatus_e createStackInt(stackInt** s, unsigned int size)$/;"	f
+create_LL_int_list	linkedListInt.c	/^ll_create_e create_LL_int_list(ll_int** head_node)$/;"	f
+curr_size	stackInt.h	/^	unsigned int curr_size;$/;"	m	struct:__stackMetaInfo
+displayList_ll_int	linkedListInt.c	/^void displayList_ll_int(ll_int* head_node)$/;"	f
+displayNode_ll_int	linkedListInt.c	/^void displayNode_ll_int(ll_int* node)$/;"	f
+displayStackInt	stackInt.c	/^void displayStackInt(stackInt* s)$/;"	f
+displayStackMeta	stackInt.c	/^void displayStackMeta(stackMetaInfo* sMeta)$/;"	f
+getLastNode_ll_int	linkedListInt.c	/^ll_int* getLastNode_ll_int(ll_int* head_node)$/;"	f
+getNumNodes_ll_int	linkedListInt.c	/^unsigned int getNumNodes_ll_int(ll_int* head_node)$/;"	f
+get_ll_node_tracker	linkedListInt.c	/^unsigned int get_ll_node_tracker()$/;"	f
+get_new_node_ll_int	linkedListInt.c	/^ll_int* get_new_node_ll_int()$/;"	f
+initStackInt	stackInt.c	/^void initStackInt(stackInt* s,unsigned int size)$/;"	f
+insertNode_ll_int	linkedListInt.c	/^void insertNode_ll_int(ll_int* node,ll_int* next_node)$/;"	f
+insert_new_node_ll_int	linkedListInt.c	/^bool insert_new_node_ll_int(ll_int* node)$/;"	f
+isEmpty	stackInt.h	/^	bool isEmpty;$/;"	m	struct:__stackMetaInfo
+isFull	stackInt.h	/^	bool isFull;$/;"	m	struct:__stackMetaInfo
+isStackEmpty	stackInt.c	/^bool isStackEmpty(stackMetaInfo* sMeta)$/;"	f
+isStackFull	stackInt.c	/^bool isStackFull(stackMetaInfo* sMeta)$/;"	f
+ll_create_e	linkedList.h	/^}ll_create_e;$/;"	t	typeref:enum:__anon1
+ll_int	linkedListInt.h	/^typedef struct __linkedListInt ll_int;$/;"	t	typeref:struct:__linkedListInt
+main	test_linkedListInt.c	/^int main()$/;"	f
+main	test_stackInt.c	/^int main()$/;"	f
+mergeList_ll_int	linkedListInt.c	/^void mergeList_ll_int(ll_int* list1,ll_int* list2, unsigned int m)$/;"	f
+next	linkedListInt.h	/^	struct __linkedListInt* next;$/;"	m	struct:__linkedListInt	typeref:struct:__linkedListInt::__linkedListInt
+popStackInt	stackInt.c	/^int popStackInt(stackInt* s)$/;"	f
+pushStackInt	stackInt.c	/^stackOpStatus_e pushStackInt(stackInt* s,int data)$/;"	f
+reverseList_ll_int	linkedListInt.c	/^void reverseList_ll_int(ll_int** head_node)$/;"	f
+seekStackInt	stackInt.c	/^int seekStackInt(stackInt* s)$/;"	f
+stack	stackInt.h	/^	int* stack;$/;"	m	struct:__stackInt
+stackInt	stackInt.h	/^typedef struct __stackInt stackInt;$/;"	t	typeref:struct:__stackInt
+stackMeta	stackInt.h	/^	struct __stackMetaInfo stackMeta;$/;"	m	struct:__stackInt	typeref:struct:__stackInt::__stackMetaInfo
+stackMetaInfo	stackInt.h	/^typedef struct __stackMetaInfo stackMetaInfo;$/;"	t	typeref:struct:__stackMetaInfo
+stackOpStatus_e	stackInt.h	/^}stackOpStatus_e;$/;"	t	typeref:enum:__anon2
+stack_size	stackInt.h	/^	unsigned int stack_size;$/;"	m	struct:__stackMetaInfo
+top	stackInt.h	/^	int top;$/;"	m	struct:__stackMetaInfo
+total_nodes_ll_int	linkedListInt.c	/^unsigned int total_nodes_ll_int = 0;$/;"	v
+value	linkedListInt.h	/^	int value;$/;"	m	struct:__linkedListInt
